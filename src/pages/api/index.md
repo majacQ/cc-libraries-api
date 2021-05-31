@@ -1,5 +1,5 @@
 ---
-title: OpenAPI - CC Libraries API
-description: This is the OpenAPI page for CC Libraries API
+title: Endpoint references—Creative Cloud Libraries API
+description: The OpenAPI spec for Creative Cloud Libraries API endpoints, parameters, and responses.
 openAPISpec: https://raw.githubusercontent.com/AdobeDocs/cc-libraries-api-spec/main/openapi.json
 ---

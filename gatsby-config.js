@@ -10,16 +10,11 @@
  * governing permissions and limitations under the License.
  */
 
-const globalNav = require("@adobe/gatsby-theme-parliament/globalNav.json");
-
-globalNav.menus = [globalNav.menus[1]];
-
 module.exports = {
   siteMetadata: {
-    globalNav,
     pages: [
       {
-        title: "CC Libraries API",
+        title: "Creative Cloud Libraries API",
         path: "/",
       },
       {
@@ -38,6 +33,10 @@ module.exports = {
         title: "Go live",
         path: "/go-live/",
       },
+      {
+        title: "Community",
+        path: "/community/",
+      },
     ],
     subPages: [
       {
@@ -45,7 +44,7 @@ module.exports = {
         path: "/overview/",
         pages: [
           {
-            title: "What are CC Libraries?",
+            title: "What are Creative Cloud Libraries?",
             path: "/overview/product-overview/",
           },
           {
@@ -123,11 +122,29 @@ module.exports = {
         ],
       },
       {
+        title: "References",
+        path: "/integrate/references/",
+        pages: [
+          {
+            title: "API Reference",
+            path: "/api/"
+          },
+          {
+            title: "I/O Events Properties",
+            path: "/integrate/references/event-properties/",
+          },
+          {
+            title: "Glossary",
+            path: "/integrate/references/glossary",
+          }
+        ],
+      },
+      {
         title: "Go live",
         path: "/go-live/",
         pages: [
           {
-            title: "CC Integrations Review",
+            title: "Submission and review",
             path: "/go-live/review-process/",
           },
           {
@@ -136,9 +153,12 @@ module.exports = {
           },
         ],
       },
+      {
+        title: "Community",
+        path: "/community/",
+      },
     ],
   },
-  plugins: [`@adobe/gatsby-theme-parliament`],
-  pathPrefix:
-    process.env.PATH_PREFIX || "/gatsby-theme-parliament-documentation",
+  plugins: [`@adobe/gatsby-theme-aio`],
+  pathPrefix: process.env.PATH_PREFIX || "/creative-cloud-libraries/docs/",
 };

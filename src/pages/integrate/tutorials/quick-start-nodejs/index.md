@@ -1,12 +1,12 @@
 # Quick Start: Node.js
 
-Welcome to the CC Libraries API!
+Welcome to the Creative Cloud Libraries API!
 
-In this Quick Start tutorial, we'll be walking you towards making your first API call from a Node.js script. By the end you'll have a self-invoking function that makes a call to the CC Libraries API when you run the script.
+In this Quick Start tutorial, we'll be walking you towards making your first API call from a Node.js script. By the end you'll have a self-invoking function that makes a call to the Libraries API when you run the script.
 
-This API call will return information about the libraries you have stored in CC Libraries:
+This API call will return information about the libraries you have stored in Libraries:
 
-```
+```json
 {
   "total_count": 2,
   "libraries": [
@@ -16,7 +16,7 @@ This API call will return information about the libraries you have stored in CC 
 }
 ```
 
-By starting with this basic Node.js script, you'll have an idea of what's required to make `GET` requests to the CC Libraries API. From there, you can play with the script to make `GET` requests to different endpoints from Node.js, or translate these concepts to your environment of choice, with Node.js server frameworks like Express and beyond.
+By starting with this basic Node.js script, you'll have an idea of what's required to make `GET` requests to the Libraries API. From there, you can play with the script to make `GET` requests to different endpoints from Node.js, or translate these concepts to your environment of choice, with Node.js server frameworks like Express and beyond.
 
 ## Before you start
 
@@ -30,12 +30,12 @@ By starting with this basic Node.js script, you'll have an idea of what's requir
 
 **Tutorials**
 
-- [How to get your developer credentials](./how-to-get-your-developer-credentials.md)
-- [How to get access tokens with OAuth](./tutorials/how-to-get-access-tokens-with-oauth.md)
+- [How to get your developer credentials](../../setup/developer-credentials/index.md)
+- [How to get access tokens with OAuth](../../setup/oauth/index.md)
 
 **Assets**
 
-- At least one CC Library associated with your Adobe ID.
+- At least one Library associated with your Adobe ID.
 - A terminal application for a UNIX-based system (like macOS, Linux, or Windows Subsystem for Linux)
 
 ## Development Steps
@@ -52,9 +52,9 @@ touch .env
 echo .env >> .gitignore # Don't track your .env file in version control
 ```
 
-In our [How to get your developer credentials](./how-to-get-your-developer-credentials.md) tutorial, we showed you how to get your API key from the Adobe Developer Console and user access token from the OAuth 2.0 Playground. You can take both of those values and add them to their respective variables in the `.env` file as seen below. Don't include the angle brackets (`< >`) in your values:
+In our [How to get your developer credentials](../../setup/developer-credentials/index.md) tutorial, we showed you how to get your API key from the Adobe Developer Console and user access token from the OAuth 2.0 Playground. You can take both of those values and add them to their respective variables in the `.env` file as seen below. Don't include the angle brackets (`< >`) in your values:
 
-```
+```env
 API_KEY=<CLIENT_ID_HERE>
 ACCESS_TOKEN=<ACCESS_TOKEN_HERE>
 ```
@@ -151,7 +151,7 @@ This is the last step, where we'll embellish on the basic setup we've done so fa
 
 A success response will look something like this:
 
-```
+```json
 {
   "total_count": 2,
   "libraries": [
@@ -161,13 +161,4 @@ A success response will look something like this:
 }
 ```
 
-Always check [the references](https://cc-libraries-api.github.io/open-api/) for the full details on any request or response.
-
-## Next Steps
-
-- [Quick Start: cURL](./quick-start-curl.md)
-- [Getting data: Node.js](./getting-data/nodejs.md)
-
-## Other Resources
-
-- [Endpoint references](https://cc-libraries-api.github.io/open-api/)
+Always check [the references](/api/) for the full details on any request or response.
