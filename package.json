@@ -8,8 +8,17 @@
     "url": "https://github.com/AdobeDocs/cc-libraries-api"
   },
   "dependencies": {
-    "@adobe/gatsby-theme-aio": "^3.7.0",
+  <<<<<<< atomist/npm-audit-main
+    "@adobe/gatsby-theme-aio": "^3.4.0",
     "gatsby": "^3.6.1",
+  =======
+    "@adobe/gatsby-theme-aio": "^3.7.0",
+  <<<<<<< atomist/npm-audit-main
+    "gatsby": "^3.6.1",
+  =======
+    "gatsby": "^3.0.0",
+  >>>>>>> main
+  >>>>>>> main
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
