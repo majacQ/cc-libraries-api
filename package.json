@@ -1,22 +1,50 @@
 {
   "private": true,
+  <<<<<<< deploy-azure
+  <<<<<<< main
   "name": "cc-libraries-api",
   "version": "0.0.4",
+  =======
+  <<<<<<< dependabot/npm_and_yarn/adobe/gatsby-theme-aio-3.7.0
+  "name": "cc-libraries-api",
+  "version": "0.0.4",
+  =======
+  "name": "gatsby-theme-parliament-documentation",
+  "version": "0.0.2",
+  >>>>>>> deploy-azure
+  >>>>>>> deploy-azure
+  =======
+  "name": "cc-libraries-api",
+  "version": "0.0.4",
+  >>>>>>> main
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/AdobeDocs/cc-libraries-api"
   },
   "dependencies": {
+  <<<<<<< deploy-azure
+  <<<<<<< main
+  =======
+  >>>>>>> main
   <<<<<<< atomist/npm-audit-main
     "@adobe/gatsby-theme-aio": "^3.4.0",
     "gatsby": "^3.6.1",
   =======
     "@adobe/gatsby-theme-aio": "^3.7.0",
+  <<<<<<< deploy-azure
+    "gatsby": "^3.0.0",
+  >>>>>>> main
+  =======
+    "@adobe/gatsby-theme-aio": "^3.7.0",
+    "gatsby": "^3.6.1",
+  >>>>>>> deploy-azure
+  =======
   <<<<<<< atomist/npm-audit-main
     "gatsby": "^3.6.1",
   =======
     "gatsby": "^3.0.0",
+  >>>>>>> main
   >>>>>>> main
   >>>>>>> main
     "react": "^17.0.0",
